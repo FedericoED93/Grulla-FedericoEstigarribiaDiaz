@@ -72,7 +72,38 @@ h1{
     background-color: #8FECD3;
 }
 
+/* .nav-item-mod:hover {
+    transform: scale(1.5);
+    transition: 0.8s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);   
+} */
 
+
+.nav-item-mod:hover {
+    animation-name: cambiocolor;
+    animation-duration: 1.5s; 
+    animation-timing-function: ease-out; 
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;
+  }
+  
+  @keyframes cambiocolor {
+    0% {
+      transform: scale(1.2);
+      background-color: var(--color--secundario);
+      border-radius: 100%;
+    }
+    50% {
+        background-color: #88ED8C;
+
+    }
+    100% {
+      transform: scale(1.5);
+      background-color: var(--color--primario);
+    }
+  }
 
 .div_main{
     background-color: var(--color--primario);
@@ -86,6 +117,8 @@ h1{
     grid-template-rows: repeat(2,1fr);
 }
 
-.div_main-img img:nth-child(1){
-    grid-column-start: span(2);
+.div_main-img img:hover{
+    transform: scale(1.5) translate(-20%);
+    transition: 1s;
+    
 }
