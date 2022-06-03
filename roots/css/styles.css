@@ -6,6 +6,7 @@
     list-style: none;
     text-decoration: none;
     scroll-behavior: smooth;
+    
 }
 
 :root {
@@ -35,17 +36,17 @@ body {
 
 h1{
     margin-left: 2rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     color: #FF5858;
     font-weight:bold;
 }
 
 .nav-item-mod {
-    margin-top: 5rem;
-    margin-right: 5rem;
+    margin-top: 2.5rem;
+    margin-right: 3.5rem;
     margin-bottom: 5rem;
-    height: 8rem;
-    width: 8rem;
+    height: 10rem;
+    width: 10rem;
     background-color: #FBDD00;
     border-radius: 50%;
     color: #7D7B76;
@@ -72,53 +73,183 @@ h1{
     background-color: #8FECD3;
 }
 
-/* .nav-item-mod:hover {
+.nav-item-mod:hover {
     transform: scale(1.5);
     transition: 0.8s;
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);   
-} */
+}
 
+.nav-item-mod{
+    text-align: center;
+}
 
-.nav-item-mod:hover {
-    animation-name: cambiocolor;
-    animation-duration: 1.5s; 
-    animation-timing-function: ease-out; 
-    animation-delay: 0;
-    animation-direction: alternate;
-    animation-fill-mode: none;
-    animation-play-state: running;
-  }
-  
-  @keyframes cambiocolor {
-    0% {
-      transform: scale(1.2);
-      background-color: var(--color--secundario);
-      border-radius: 100%;
-    }
-    50% {
-        background-color: #88ED8C;
+.article_main{
+        --bs-gutter-x: 0;
+}
 
-    }
-    100% {
-      transform: scale(1.5);
-      background-color: var(--color--primario);
-    }
-  }
+.div_main h2{
+    padding-top: 10%;
+    margin-left: 1rem;
+    width: 80%;
+    text-align: left;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.div_main p{
+    padding-top: 5%;
+    margin-left: 1rem;
+    width: 80%;
+    text-align: left;
+    font-size: 1rem;
+}
 
 .div_main{
     background-color: var(--color--primario);
     color: white;
+    font-size: 0.8rem;
+    --bs-gutter-x: 0;
 }
 
 .div_main-img{
-    object-fit: contain;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2,1fr);
+    object-fit: cover;
+    width: 50%;
+    padding-right: 0;
+    padding-left: 0;
+    --bs-gutter-x: 0;
 }
 
-.div_main-img img:hover{
-    transform: scale(1.5) translate(-20%);
-    transition: 1s;
-    
+.div_main-img img{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+footer{
+    background-color: var(--color--secundario);
+}
+
+.footer_search{
+    padding-top: 30%;
+}
+
+.footer_button{
+    border-color: var(--color--primario);
+}
+
+.footer_button:hover{
+    background-color: var(--color--primario);
+    border-color: #7D7B76;
+}
+
+/* ----------------primera infancia */
+
+.nav_link-mod{
+    margin-left: 2rem;
+    border-radius: 5%;
+}
+
+.nav_link-mod:hover{
+    transform: scale(1.05);
+}
+
+.toggler-mod{
+    background-color: var(--color--primario);
+    border-color: var(--color--secundario);
+}
+
+.card-main-row{
+    --bs-gutter-x: 0;
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
+
+}
+
+.card-back {
+    background-image: url(../assets/TRAMA-BLANCA.png);
+    background-color: var(--color--primario)
+}
+
+.card-mod{
+    --bs-gutter-x: 0;
+    padding-right: 0;
+    padding-left: 0;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    width: 20rem;
+}
+
+.titulo_primerainfancia{
+    font-size: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    color: #88CFED;
+    font-weight:bold;
+    text-align: center;
+    --bs-gutter-y:0;
+}
+
+.card-desc{
+    color: #7D7B76;
+}
+
+.btn-carrito{
+    margin-top: 1rem;
+    background-color: var(--color--secundario);
+    color: 656565;
+    font-weight: bold;
+}
+
+.btn-carrito:hover{
+    transform: scale(1.05);
+    color: cornflowerblue;
+}
+
+/* -------------Juegos de mesa */
+
+.titulo_juegosdemesa{
+    color: #88ED8C;
+    font-size: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    font-weight:bold;
+    text-align: center;
+    --bs-gutter-y:0;
+}
+
+.titulo_construccion{
+    color: #FF952A;
+    font-size: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    font-weight:bold;
+    text-align: center;
+    --bs-gutter-y:0;
+}
+
+
+
+.titulo_ciencia{
+    color: #8FECD3;
+    font-size: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    font-weight:bold;
+    text-align: center;
+    --bs-gutter-y:0;
+}
+
+/* --------------Rompecabezas */
+
+.titulo_rompecabezas{
+    color: #FFFE69;
+    font-size: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    font-weight:bold;
+    text-align: center;
+    --bs-gutter-y:0;
 }
